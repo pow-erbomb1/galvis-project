@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profiles</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <h1>Profiles</h1>
+    <br>
+    <table>
+        <tr>
+            <th>profile_name</th>
+            <th>user</th>
+        </tr>
+        {% for profile in profs %}
+            <tr>
+                <td><a href="{{ url_for('profiles.profile', profile_name=profile.profile_name) }}">
+                <p>{{ profile.profile_name }}</p></a></td>
+                <td>{{ profile.username }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,4 +1,0 @@
-accounts
-profiles
-templates
-tests

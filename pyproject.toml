@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "galvis-project"
+version = "0.1.0"
+dependencies = ["pydantic","pymongo","flask","flask-login"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
